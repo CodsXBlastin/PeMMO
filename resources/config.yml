@@ -1,10 +1,7 @@
-##################
-#### PE MMO ######
-##################
-
+PeMMO
 ## Level Requirements
 
-# Mining (How many blocks should the player have to break)
+# Mining (How many blocks should the player have to break to level up)
 mining.lvl1: 128
 
 mining.lvl2: 500
@@ -15,7 +12,7 @@ mining.lvl4: 2500
 
 mining.lvl5: 5000
 
-# Tree cutting
+# Tree cutting (How many trees should the player have to break to level up)
 treecutting.lvl1: 128
 
 treecutting.lvl2: 500
@@ -25,3 +22,14 @@ treecutting.lvl3: 1000
 treecutting.lvl4: 2500
 
 treecutting.lvl5: 5000
+
+# Combat (How many entities should the player have to kill to level up)
+combat.lvl1: 128
+
+combat.lvl2: 500
+
+combat.lvl3: 1000
+
+combat.lvl4: 2500
+
+combat.lvl5: 5000
