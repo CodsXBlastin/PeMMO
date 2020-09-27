@@ -6,6 +6,7 @@ use HyperEnte\MMO\MMO;
 use pocketmine\command\PluginCommand;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
+use pocketmine\utils\TextFormat as C;
 use pocketmine\utils\Config;
 
 class MMOCommand extends PluginCommand{
@@ -24,7 +25,8 @@ class MMOCommand extends PluginCommand{
 		$info = $c->get("$name");
 		$mining = $info["mining"];
 		$tree = $info["treecutting"];
-		$sender->sendMessage("§eYour MMO Stats:\n§fMining: §a$mining\n§fTreecutting: §a$tree");
+		$combat = $info["combat"];
+		$sender->sendMessage(C::GREEN . $name . "'s " . C::GOLD . "MMO Stats:\n" . C::BLUE . "Mining: " . $mining . C::GREEN . "\nForaging: " . $tree . C::RED . "\nCombat: " . $combat);
 
 	}
 
